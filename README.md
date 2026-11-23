@@ -24,22 +24,9 @@ Necesitas Java 21, Maven, Git y Docker Desktop.
    mvn spring-boot:run
    ```
 
-## Probar
+5. Las bibliotecas y sus libros se pueden consultar en http://localhost:8080/bibliotecas.
 
-1. Abre http://localhost:8080/bibliotecas en el navegador. Deben aparecer las bibliotecas con sus libros.
-2. Para registrar una biblioteca desde Postman, selecciona POST y usa esa misma dirección.
-3. En Body selecciona raw, elige JSON y escribe:
-
-   ```json
-   {
-     "nombre": "Biblioteca Sur",
-     "direccion": "Calle 20",
-     "ciudad": "Bogotá"
-   }
-   ```
-
-4. Pulsa Send. La respuesta debe tener estado 201 y los datos de la biblioteca creada.
-5. Abre de nuevo http://localhost:8080/bibliotecas y busca el nombre que registraste.
+También se puede registrar una biblioteca por Postman con POST a esa misma dirección, enviando nombre, direccion y ciudad en JSON.
 
 La primera vez se guardan las bibliotecas y los libros de ejemplo. Los datos quedan en MySQL y se conservan al reiniciar.
 
