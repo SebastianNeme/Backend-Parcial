@@ -7,22 +7,22 @@ Necesitas Java 21, Maven, Git y Docker Desktop.
 1. Abre Docker Desktop y espera a que termine de iniciar.
 2. Abre una terminal y descarga el proyecto:
 
-   ```bash
+  
    git clone https://github.com/SebastianNeme/Backend-Parcial.git
    cd Backend-Parcial
-   ```
+   
 
 3. Inicia MySQL:
 
-   ```bash
+   
    docker compose up -d --wait
-   ```
+   
 
 4. Inicia el backend y deja esa terminal abierta:
 
-   ```bash
+   
    mvn spring-boot:run
-   ```
+
 
 5. Las bibliotecas y sus libros se pueden consultar en http://localhost:8080/bibliotecas.
 
